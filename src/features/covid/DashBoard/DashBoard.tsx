@@ -27,7 +27,7 @@ const DashBoard: React.FC = () => {
   const dispatch = useDispatch();
   const data = useSelector(selectData);
 
-  // 起動時に読み込まれ、APIのdataを取得する。
+  // 起動時にapiの値を取得。
   useEffect(() => {
     dispatch(fetchAsyncGet());
     dispatch(fetchAsyncGetDaily());

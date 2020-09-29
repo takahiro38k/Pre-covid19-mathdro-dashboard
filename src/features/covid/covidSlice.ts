@@ -99,7 +99,7 @@ export const fetchAsyncGetDaily = createAsyncThunk(
   "covid/getDaily",
   async () => {
     // axios.get()はpromiseオブジェクトを返す。dataプロパティのみを分割代入。
-    const { data } = await axios.get<ApiDataDaily>(`${apiUrl}/daily`);
+    const { data } = await axios.get(`${apiUrl}/daily`);
     return data;
   }
 );
